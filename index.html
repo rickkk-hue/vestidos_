@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NATALIA VAHL</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <nav>
+      <h1 class="logo">Vestidos Únicos</h1>
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#quince">15 Años</a></li>
+        <li><a href="#novias">Novias</a></li>
+        <li><a href="#accesorios">Accesorios</a></li>
+        <li><a href="#registro">Registro</a></li>
+      </ul>
+      <div class="redes">
+        <span>Nuestras redes:</span>
+        <a href="https://www.instagram.com/nataliavahlvestidos/" target="_blank"><i class='bx bxl-instagram'></i></a>
+        <a href="#" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+        <a href="https://www.facebook.com/NataliaVahl78/" target="_blank"><i class='bx bxl-facebook'></i></a>
+      </div>
+    </nav>
+
+    <!-- MENÚ INFORMACIÓN IMPORTANTE -->
+    <div class="info-importante">
+      <button class="info-btn" onclick="toggleMenu()">INFORMACIÓN IMPORTANTE</button>
+      <div class="info-menu" id="infoMenu">
+        <div class="pregunta">
+          <h4>¿Con cuánta anticipación puedo encargar un vestido?</h4>
+          <p>El tiempo máximo para encargar tu vestido es de 12 meses antes de la fecha del evento y el tiempo mínimo 3 meses antes de la fecha de tu evento.</p>
+        </div>
+        <div class="pregunta">
+          <h4>¿Cuáles son las modalidades y medios de pago?</h4>
+          <p>Medios de pago: Efectivo, transferencia bancaria, Mercado Pago y aceptamos todas las tarjetas de crédito.</p>
+          <p>Modalidades:</p>
+          <ul>
+            <li>En un pago: 13% de descuento con transferencia bancaria o efectivo.</li>
+            <li>En un pago o en cuotas con tarjeta de crédito: 14% de recargo + interés.</li>
+            <li>En cuotas sin tarjeta de crédito: 10% de descuento sin interés.</li>
+            <li>En 5 cuotas: entrega inicial del 30% y 4 cuotas iguales con actualización 6 meses antes del evento.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- SECCIÓN INICIO CON VIDEO -->
+  <section id="inicio" class="inicio">
+    <video autoplay muted loop class="video-fondo">
+      <source src="./IMG/WhatsApp Video 2025-10-19 at 22.05.18.mp4" type="video/mp4">
+      Tu navegador no soporta video en HTML5.
+    </video>
+    <div class="overlay">
+      <div>
+        <h2 class="titulo-animado">Vestidos hechos a medida para momentos únicos ✨</h2>
+        <p class="subtitulo">Atención personalizada con turno previo pactado con nuestra diseñadora</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN 15 AÑOS -->
+  <section id="quince" class="seccion">
+    <h2>Vestidos de 15 Años</h2>
+    <div class="carousel">
+      <button class="flecha izquierda" onclick="moverCarrusel('quince', -1)"><i class='bx bx-chevron-left'></i></button>
+      <div class="contenedor-imagenes" id="carrusel-quince">
+        <img src="./img/15.jpeg" alt="Vestido 15 1">
+        <img src="./img/15-2.jpeg" alt="Vestido 15 2">
+        <img src="./img/15-3.jpeg" alt="Vestido 15 3">
+         <img src="./img/15-4.jpeg" alt="Vestido 15 4">
+        <img src="./img/15-5.jpeg" alt="Vestido 15 5">
+        <img src="./img/15-6.jpeg" alt="Vestido 15 6">
+        <img src="./img/15-7.jpeg" alt="Vestido 15 7">
+      </div>
+      <button class="flecha derecha" onclick="moverCarrusel('quince', 1)"><i class='bx bx-chevron-right'></i></button>
+    </div>
+  </section>
+
+  <!-- SECCIÓN NOVIAS -->
+  <section id="novias" class="seccion">
+    <h2>Vestidos de Novia</h2>
+    <div class="carousel">
+      <button class="flecha izquierda" onclick="moverCarrusel('novias', -1)"><i class='bx bx-chevron-left'></i></button>
+      <div class="contenedor-imagenes" id="carrusel-novias">
+        <img src="./img/novia.jpeg" alt="Vestido novia 1">
+        <img src="./img/novia-2.jpeg" alt="Vestido novia 2">
+        <img src="./img/novia-3.jpeg" alt="Vestido novia 3">
+        <img src="./img/novia-4.jpeg" alt="Vestido novia 1">
+        <img src="./img/novia-5.jpeg" alt="Vestido novia 2">
+        <img src="./img/novia-6.jpeg" alt="Vestido novia 3">
+        <img src="./img/novia-7.jpeg" alt="Vestido novia 2">
+        <img src="./img/novia-8.jpeg" alt="Vestido novia 3">
+      </div>
+      <button class="flecha derecha" onclick="moverCarrusel('novias', 1)"><i class='bx bx-chevron-right'></i></button>
+    </div>
+  </section>
+
+  <!-- SECCIÓN ACCESORIOS -->
+  <section id="accesorios" class="seccion">
+    <h2>Accesorios</h2>
+    <div class="carousel">
+      <button class="flecha izquierda" onclick="moverCarrusel('accesorios', -1)"><i class='bx bx-chevron-left'></i></button>
+      <div class="contenedor-imagenes" id="carrusel-accesorios">
+        <img src="./img/acc-1.jpeg" alt="Accesorio 1">
+        <img src="./img/acc-10.jpeg" alt="Accesorio 2">
+        <img src="./img/acc-11.jpeg" alt="Accesorio 3">
+        <img src="./img/acc-12.jpeg" alt="Accesorio 1">
+        <img src="./img/acc-13.jpeg" alt="Accesorio 2">
+        <img src="./img/acc-14.jpeg" alt="Accesorio 3">
+        <img src="./img/acc-15.jpeg" alt="Accesorio 1">
+        <img src="./img/acc-16.jpeg" alt="Accesorio 2">
+        <img src="./img/acc-17.jpeg" alt="Accesorio 3">
+        <img src="./img/acc-18.jpeg" alt="Accesorio 1">
+        <img src="./img/acc-2.jpeg" alt="Accesorio 2">
+        <img src="./img/acc-3.jpeg" alt="Accesorio 3">
+      </div>
+      <button class="flecha derecha" onclick="moverCarrusel('accesorios', 1)"><i class='bx bx-chevron-right'></i></button>
+    </div>
+  </section>
+
+  <!-- FORMULARIO DE REGISTRO -->
+  <section id="registro" class="seccion">
+    <h2>Registro de Usuario</h2>
+    <form id="registroForm" class="form-registro" novalidate>
+      <div class="campo">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required>
+      </div>
+      <div class="campo">
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+      </div>
+      <div class="campo">
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" required minlength="6">
+      </div>
+      <button type="submit" class="btn-registro">Registrarse</button>
+    </form>
+    <p id="mensajeRegistro"></p>
+  </section>
+
+  <a href="#inicio" class="btn-arriba"><i class='bx bx-up-arrow-alt'></i></a>
+
+  <!-- SCRIPTS -->
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('infoMenu');
+      menu.classList.toggle('open');
+    }
+
+    const posiciones = { quince: 0, novias: 0, accesorios: 0 };
+    function moverCarrusel(seccion, direccion) {
+      const contenedor = document.getElementById(`carrusel-${seccion}`);
+      const total = contenedor.children.length;
+      posiciones[seccion] = (posiciones[seccion] + direccion + total) % total;
+      contenedor.style.transform = `translateX(${-posiciones[seccion]*100}%)`;
+    }
+
+    // Registro
+    const form = document.getElementById('registroForm');
+    const mensaje = document.getElementById('mensajeRegistro');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const nombre = document.getElementById('nombre').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const password = document.getElementById('password').value.trim();
+
+      if(!nombre || !email || !password){
+        mensaje.textContent = "⚠️ Completa todos los campos.";
+        mensaje.style.color="#ffd600";
+        return;
+      }
+
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if(!emailRegex.test(email)){
+        mensaje.textContent="⚠️ Ingresá un email válido.";
+        mensaje.style.color="#ffd600";
+        return;
+      }
+      if(password.length<6){
+        mensaje.textContent="⚠️ La contraseña debe tener al menos 6 caracteres.";
+        mensaje.style.color="#ffd600";
+        return;
+      }
+
+      const usuario = {nombre,email,password,fecha:new Date().toISOString()};
+      let usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
+      usuarios.push(usuario);
+      localStorage.setItem('usuarios', JSON.stringify(usuarios));
+
+      mensaje.textContent = "✅ Registro guardado en este equipo.";
+      mensaje.style.color = "#9fffb3";
+      form.reset();
+    });
+
+    // Fade-in de imágenes
+    const imgs = document.querySelectorAll('.contenedor-imagenes img');
+    const observer = new IntersectionObserver((entries)=>{
+      entries.forEach(entry=>{
+        if(entry.isIntersecting){
+          entry.target.classList.add('visible');
+        }
+      });
+    }, {threshold:0.2});
+    imgs.forEach(img=>observer.observe(img));
+
+  </script>
+
+</body>
+</html>
